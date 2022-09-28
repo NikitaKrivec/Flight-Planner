@@ -5,7 +5,7 @@ import { RIX, ARN, RYANAIR, DXB, baseDateTime } from "./fixture";
 
 describe("Adding Flights", () => {
   beforeEach(() => TestApi.clear());
-
+  
   const request = new AddFlightRequest(
     RIX,
     ARN,
@@ -13,7 +13,7 @@ describe("Adding Flights", () => {
     baseDateTime,
     moment(baseDateTime).add(1, "day")
   );
-
+  console.log(request);
   it("should be able to add flights", async done => {
     const response = await AdminFlightApi.addFlight(request);
 
@@ -51,7 +51,7 @@ describe("Adding Flights", () => {
 
   it("should not be able to add same flight twice", async done => {
     const response = await AdminFlightApi.addFlight(request);
-
+    
     expect(response.status).toBe(201);
 
     try {
@@ -62,7 +62,7 @@ describe("Adding Flights", () => {
     }
     done();
   });
-
+  
   it("should not accept wrong values", async done => {
     const requests = [
       {
