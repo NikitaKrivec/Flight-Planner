@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\FlightPlanner\\FlightPlanner_DB\\FlightPlanner\\FlightPlanner.csproj": {}
+    "C:\\FlightPlanner\\Flight-Planner\\FlightPlanner_DB\\FlightPlanner\\FlightPlanner.csproj": {}
   },
   "projects": {
-    "C:\\FlightPlanner\\FlightPlanner_DB\\FlightPlanner\\FlightPlanner.csproj": {
+    "C:\\FlightPlanner\\Flight-Planner\\FlightPlanner_DB\\FlightPlanner\\FlightPlanner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FlightPlanner\\FlightPlanner_DB\\FlightPlanner\\FlightPlanner.csproj",
+        "projectUniqueName": "C:\\FlightPlanner\\Flight-Planner\\FlightPlanner_DB\\FlightPlanner\\FlightPlanner.csproj",
         "projectName": "FlightPlanner",
-        "projectPath": "C:\\FlightPlanner\\FlightPlanner_DB\\FlightPlanner\\FlightPlanner.csproj",
+        "projectPath": "C:\\FlightPlanner\\Flight-Planner\\FlightPlanner_DB\\FlightPlanner\\FlightPlanner.csproj",
         "packagesPath": "C:\\Users\\Pisinus\\.nuget\\packages\\",
-        "outputPath": "C:\\FlightPlanner\\FlightPlanner_DB\\FlightPlanner\\obj\\",
+        "outputPath": "C:\\FlightPlanner\\Flight-Planner\\FlightPlanner_DB\\FlightPlanner\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

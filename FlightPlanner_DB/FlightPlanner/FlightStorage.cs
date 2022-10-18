@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using FlightPlanner.Models;
-using PageResult = FlightPlanner.Models.PageResult;
 
 namespace FlightPlanner
 {
@@ -10,28 +8,6 @@ namespace FlightPlanner
     {
         private static List<Flight> _flights = new List<Flight>();
         private static int _id = 1;
-
-        //public static Airport[] FindAirport(string phrase)
-        //{
-        //    var airport = new List<Airport>();
-        //    var formattedPhrase = phrase.ToLower().Trim();
-        //    foreach (var flight in _flights)
-        //    {
-        //        if (flight.From.City.ToLower().Contains(formattedPhrase) ||
-        //           flight.From.Country.ToLower().Contains(formattedPhrase) ||
-        //           flight.From.AirportName.ToLower().Contains(formattedPhrase))
-        //        {
-        //            airport.Add(flight.From);
-        //        }
-        //        if (flight.To.City.ToLower().Contains(formattedPhrase) ||
-        //           flight.To.Country.ToLower().Contains(formattedPhrase) ||
-        //            flight.To.AirportName.ToLower().Contains(formattedPhrase))
-        //        {
-        //            airport.Add(flight.To);
-        //        }
-        //    }
-        //    return airport.ToArray();
-        //}
 
         public static bool ValidFormat(Flight flight)
         {
@@ -73,11 +49,6 @@ namespace FlightPlanner
                     return true;
                 }
                 return false;
-        }
-
-        public static PageResult SearchFlights(SearchFlightRequest request)
-        {
-                return new PageResult(_flights);
         }
 
         public static bool IsValidFlight(SearchFlightRequest request)
